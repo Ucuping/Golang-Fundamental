@@ -1,3 +1,10 @@
 Golang project Insilise:
 1. Enter the project directory.
 2. Type go mod init (project name, usually the same as the directory name).
+
+To run the Golang project:
+Type go run (the project you want to run).
+
+To build a Golang project:
+go build
+go build -o example
