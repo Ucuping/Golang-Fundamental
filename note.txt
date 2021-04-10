@@ -8,3 +8,23 @@ Type go run (the project you want to run).
 To build a Golang project:
 go build
 go build -o example
+
+Package is used to group files into one package.
+
+Println prints a string.
+Sprintf returns a string (% s (String)% d (intger)).
+
+There are 2 types of packages in Golang:
+1. Executable (main).
+2. Library (Besides main).
+
+For a different package so that the function can be accessed in another package, the front function name must be large so that it becomes public.
+
+To call another package enter the package name in import ("root or folder name / package name")
+
+Import function:
+1. Used to call Golang's standard library.
+2. Used to call our other packages.
+3. Used to call other people's libraries.
+
+func main is used to run code that is executable.
