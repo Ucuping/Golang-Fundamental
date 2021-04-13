@@ -28,3 +28,113 @@ Import function:
 3. Used to call other people's libraries.
 
 func main is used to run code that is executable.
+
+How to write variables and data types in Golang:
+1. var (variable name) (data type) = (content) or var (variable name) (data type).
+2. data types in group for example string, int, float64, bool.
+3. (variable name): = (content), to change its content (variable name) = (content).
+
+if else condition
+score := 20
+var grade string
+
+if score <= 20 {
+	grade = "You score 20-"
+} else if score >= 20 {
+	grade = "You score 20+"
+} else {
+	grade = "Nothing"
+}
+
+fmt.Println(grade)
+
+switch case condition
+number := 20
+
+switch number {
+case 10:
+fmt.Println("10")
+case 20:
+fmt.Println("20")
+case 30:
+fmt.Println("30")
+}
+
+if number == 10 {
+fmt.Println("Number is ", number)
+}
+
+// looping
+	fmt.Println("I am learning Golang")
+	// for i := 1; i <= 10; i++ {
+	// 	fmt.Println("I am is amazing", i)
+	// }
+	//while
+	// i := 1
+	// for i <= 10 {
+	// 	fmt.Println("I am amazing", i)
+	// 	i++
+	// }
+	// foreach
+	title := "Go the best language"
+	// for index, letter := range title {
+	// 	// fmt.Println("index:", index, " letter:", letter)
+	// 	fmt.Println("index:", index, " letter:", string(letter))
+	// }
+	// for _, letter := range title {
+	// 	fmt.Println("Golang:", string(letter))
+	// }
+	for index, letter := range title {
+		// if index%2 == 0 {
+		// 	fmt.Println("index:", index, " letter:", string(letter))
+		// }
+		letterString := string(letter)
+		// if letterString == "a" || letterString == "i" || letterString == "u" || letterString == "e" || letterString == "o" {
+		// 	fmt.Println("index:", index, " letter:", string(letter))
+		// }
+		switch letterString {
+		case "a", "i", "u", "e", "o":
+			fmt.Println("Index:", index, " letter:", string(letter))
+		}
+	}
+    
+// array
+	// var languages [5]string
+	// languages[0] = "Go"
+	// languages[1] = "Ruby"
+	// languages[2] = "JavaScript"
+	// languages[3] = "C#"
+	// languages[4] = "Python"
+
+	// languages := [5]string{"Ruby", "Python", "JavaScript", "Go", "C#"}
+	// languages := [5]string{
+	// 	"Ruby",
+	// 	"Python",
+	// 	"JavaScript",
+	// 	"Go",
+	// 	"C#",
+	// }
+	// languages := [...]string{
+	// 	"Ruby",
+	// 	"Python",
+	// 	"JavaScript",
+	// 	"Go",
+	// 	"C#",
+	// 	"PHP",
+	// }
+
+	// fmt.Println(languages)
+	// length := len(languages)
+	// fmt.Println(length)
+
+	languages := [...]string{
+		"Ruby",
+		"Python",
+		"JavaScript",
+		"Go",
+		"C#",
+		"PHP",
+	}
+	for index, lang := range languages {
+		fmt.Println("Index:", index, " language:", lang)
+	}
